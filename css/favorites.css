@@ -42,15 +42,15 @@
 }
 
 .site-img1 {
-    background: url('/images/image1.png') no-repeat center/cover;
+    background: url('../images/image1.png') no-repeat center/cover;
 }
 
 .site-img2 {
-    background: url('/images/image2.png') no-repeat center/cover;
+    background: url('../images/image2.png') no-repeat center/cover;
 }
 
 .site-img3 {
-    background: url('/images/image3.png') no-repeat center/cover;
+    background: url('../images/image3.png') no-repeat center/cover;
 }
 
 .site-name {
