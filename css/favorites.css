@@ -1,0 +1,83 @@
+.favorites {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.site {
+    width: 22%;
+    height: 400px;
+    border: 1px solid #555555;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.site:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    border-color: #4caf50;
+}
+
+.site:hover .site-img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.site a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.site-img {
+    background-size: cover;
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.site-img1 {
+    background: url('/images/image1.png') no-repeat center/cover;
+}
+
+.site-img2 {
+    background: url('/images/image2.png') no-repeat center/cover;
+}
+
+.site-img3 {
+    background: url('/images/image3.png') no-repeat center/cover;
+}
+
+.site-name {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+    padding-left: 20px;
+    align-items: center;
+    transition: color 0.3s ease;
+    text-overflow: ellipsis;
+}
+
+.site:hover .site-name {
+    color: #4caf50;
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .site-name {
+        font-size: 1.4rem;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .site {
+        width: 80%;
+    }
+}

@@ -1,0 +1,79 @@
+.resume {
+    padding-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+tr, th, td {
+    border: 1px solid #ffffff;
+}
+
+td {
+    padding: 0 20px;
+    height: 50px;
+}
+
+th {
+    background-color: gray;
+    color: black;
+    height: 50px;
+}
+
+table caption {
+    text-align: left;
+}
+
+.first-table .img {
+    background: url('https://i.pinimg.com/736x/c5/5c/76/c55c762ce418abefd071aa7e81c5a213.jpg') no-repeat center/cover ;
+    width: 200px;
+}
+
+.first-table tr td.second-td {
+    width: 150px;
+    font-weight: bold;
+    background-color: gray;
+    color: black;
+}
+
+.second-table tr td {
+    width: 33%;
+}
+
+.second-table tr td:nth-child(1) {
+    text-align: center;
+}
+
+.third-table tr td {
+    width: 25%;
+}
+
+.fourth-table .third-td, .fourth-table .fifth-td {
+    text-align: right;
+    width: 20%;
+}
+
+.first-td, .second-td, .fourth-td {
+    font-weight: bold;
+    background-color: gray;
+    color: black;
+}
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1023px) {
+    table {
+        width: 80%;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+    table {
+        width: 90%;
+    }
+}
